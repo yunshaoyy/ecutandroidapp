@@ -1,0 +1,29 @@
+div {
+    color: white;
+}
+
+body {
+    text-align: center;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+#div1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: blue;
+}
+
+#div2 {
+    position: absolute;
+    bottom: 20%;
+    left: 0%;
+    right: 0%;
+}
