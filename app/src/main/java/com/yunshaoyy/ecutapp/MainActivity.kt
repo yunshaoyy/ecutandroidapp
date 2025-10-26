@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupWebView() {
         myWebView.settings.javaScriptEnabled = true
         myWebView.webViewClient = MyWebViewClient()
-        myWebView.loadUrl("file:///android_asset/main.html")
+        myWebView.loadUrl("file:///android_asset/new.html")
     }
     private inner class MyWebViewClient : WebViewClient() {
         override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            position: absolute;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: center;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 100%;
+            height: 100%;
+            gap: 10px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-top {
+            grid-column: 2;
+            grid-row: 1;
+            background: linear-gradient(to right, #3498db, #2980b9);
+        }
+
+        .btn-bottom {
+            grid-column: 2;
+            grid-row: 3;
+            background: linear-gradient(to right, #2ecc71, #27ae60);
+        }
+
+        .btn-left {
+            grid-column: 1;
+            grid-row: 2;
+            background: linear-gradient(to right, #e74c3c, #c0392b);
+        }
+
+        .btn-right {
+            grid-column: 3;
+            grid-row: 2;
+            background: linear-gradient(to right, #9b59b6, #8e44ad);
+        }
+
+        .btn-top:hover {
+            background: linear-gradient(to right, #2980b9, #3498db);
+        }
+
+        .btn-bottom:hover {
+            background: linear-gradient(to right, #27ae60, #2ecc71);
+        }
+
+        .btn-left:hover {
+            background: linear-gradient(to right, #c0392b, #e74c3c);
+        }
+
+        .btn-right:hover {
+            background: linear-gradient(to right, #8e44ad, #9b59b6);
+        }
+
+        #logo {
+            text-align: center;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="logo">
+    <img src="https://www.ecut.edu.cn/_upload/tpl/07/27/1831/template1831/images/logo.png" alt="没有网络连接">
+</div>
+<div class="container">
+    <div class="center-text">ECUT</div>
+    <div class="button-container">
+        <a href="http://172.21.255.105" target="_blank" class="btn btn-top">校园网登录</a>
+        <a href="http://172.30.1.100:8080/Self/dashboard" target="_blank" class="btn btn-bottom">校园网管理</a>
+        <a href="https://ehall.ecut.edu.cn" target="_blank" class="btn btn-left">网上办事服务大厅</a>
+        <a href="https://atrust1.ecut.edu.cn" target="_blank" class="btn btn-right">东华理工大学VPN登录</a>
+    </div>
+</div>
+</body>
+</html>
